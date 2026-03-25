@@ -1,0 +1,485 @@
+/* Aura Dark - GNOME Shell Theme */
+/* Imports Yaru-dark as base, overrides accent colors with Aura palette */
+
+@import url("resource:///org/gnome/theme/Yaru-dark/gnome-shell.css");
+
+/* ===== Aura Color Palette ===== */
+/* Background:  #15141b    Deep Black: #0f0f0f */
+/* Foreground:  #edecee    Gray:       #6d6d6d */
+/* Purple:      #a277ff    Selection:  #3d375e */
+/* Green:       #61ffca    Blue:       #82e2ff */
+/* Orange:      #ffca85    Pink:       #f694ff */
+/* Red:         #ff6767    Surface:    #1e1d27 */
+
+/* ===== Override Yaru orange accent (#d34615) → Aura purple (#a277ff) ===== */
+
+/* Checked/active buttons, quick toggles, quick-toggle-arrow */
+.keyboard-brightness-level .button:checked,
+.quick-menu-toggle .quick-toggle-arrow:checked,
+.quick-toggle:checked,
+.icon-button.default,
+.button.default {
+  color: #0f0f0f !important;
+  background-color: #a277ff !important;
+}
+
+.keyboard-brightness-level .button:focus:checked,
+.quick-menu-toggle .quick-toggle-arrow:focus:checked,
+.quick-toggle:focus:checked,
+.icon-button.default:focus,
+.button.default:focus {
+  color: #0f0f0f !important;
+  box-shadow: inset 0 0 0 2px rgba(162, 119, 255, 0.5) !important;
+  background-color: #a277ff !important;
+}
+
+.keyboard-brightness-level .button:focus:hover:checked,
+.quick-menu-toggle .quick-toggle-arrow:focus:hover:checked,
+.quick-toggle:focus:hover:checked,
+.icon-button.default:focus:hover,
+.button.default:focus:hover {
+  background-color: #b38fff !important;
+}
+
+.keyboard-brightness-level .button:hover:checked,
+.quick-menu-toggle .quick-toggle-arrow:hover:checked,
+.quick-toggle:hover:checked,
+.icon-button.default:hover,
+.button.default:hover {
+  color: #0f0f0f !important;
+  background-color: #b38fff !important;
+}
+
+.keyboard-brightness-level .button:insensitive:checked,
+.quick-menu-toggle .quick-toggle-arrow:insensitive:checked,
+.quick-toggle:insensitive:checked,
+.icon-button.default:insensitive,
+.button.default:insensitive {
+  color: rgba(15, 15, 15, 0.5) !important;
+  background-color: #8b65d9 !important;
+}
+
+.keyboard-brightness-level .button:active:checked,
+.quick-menu-toggle .quick-toggle-arrow:active:checked,
+.quick-toggle:active:checked,
+.icon-button.default:active,
+.button.default:active {
+  color: #0f0f0f !important;
+  background-color: #9166e0 !important;
+}
+
+.keyboard-brightness-level .button:active:hover:checked,
+.quick-menu-toggle .quick-toggle-arrow:active:hover:checked,
+.quick-toggle:active:hover:checked,
+.icon-button.default:active:hover,
+.button.default:active:hover {
+  background-color: #9d75e8 !important;
+}
+
+.keyboard-brightness-level .button:active:focus:checked,
+.quick-menu-toggle .quick-toggle-arrow:active:focus:checked,
+.quick-toggle:active:focus:checked,
+.icon-button.default:active:focus,
+.button.default:active:focus {
+  background-color: #9066dd !important;
+}
+
+/* Quick toggle arrow border color override */
+.quick-menu-toggle .quick-toggle-arrow {
+  border-color: rgba(162, 119, 255, 0.25) !important;
+}
+
+.quick-menu-toggle .quick-toggle-arrow:checked {
+  border-color: rgba(80, 50, 150, 0.6) !important;
+}
+
+/* ===== Override selected/active button states (Yaru uses orange) ===== */
+.icon-button:selected,
+.button:selected,
+.icon-button:active,
+.button:active {
+  color: #0f0f0f !important;
+  background-color: #a277ff !important;
+}
+
+.icon-button:selected:hover,
+.button:selected:hover,
+.icon-button:active:hover,
+.button:active:hover {
+  background-color: #b38fff !important;
+}
+
+.icon-button:selected:focus,
+.button:selected:focus,
+.icon-button:active:focus,
+.button:active:focus {
+  background-color: #9d6ef5 !important;
+}
+
+.icon-button:checked,
+.button:checked {
+  color: #0f0f0f !important;
+  background-color: #a277ff !important;
+}
+
+.icon-button:checked:hover,
+.button:checked:hover {
+  background-color: #b38fff !important;
+}
+
+.icon-button:checked:active,
+.button:checked:active {
+  background-color: #9166e0 !important;
+}
+
+/* ===== Focus ring override (orange → purple) ===== */
+.icon-button:focus,
+.button:focus {
+  box-shadow: inset 0 0 0 2px rgba(162, 119, 255, 0.5) !important;
+}
+
+/* Cards, menus, surfaces focus */
+.lg-extension:focus,
+.quick-toggle-menu:focus,
+.message:focus,
+.events-button:focus,
+.world-clocks-button:focus,
+.weather-button:focus {
+  box-shadow: inset 0 0 0 2px rgba(162, 119, 255, 0.5) !important;
+  background-color: #29263c !important;
+}
+
+.lg-extension:focus:hover,
+.quick-toggle-menu:focus:hover,
+.message:focus:hover,
+.events-button:focus:hover,
+.world-clocks-button:focus:hover,
+.weather-button:focus:hover {
+  background-color: #332f4a !important;
+}
+
+.quick-slider .slider-bin:focus {
+  color: #edecee !important;
+  box-shadow: inset 0 0 0 2px rgba(162, 119, 255, 0.5) !important;
+  background-color: #29263c !important;
+}
+
+.quick-slider .slider-bin:focus:hover {
+  background-color: #332f4a !important;
+}
+
+/* ===== Calendar today ===== */
+.calendar .calendar-day.calendar-today {
+  color: #0f0f0f !important;
+  background-color: #a277ff !important;
+}
+
+.calendar .calendar-day.calendar-today:hover {
+  background-color: #b38fff !important;
+}
+
+.calendar .calendar-day.calendar-today:focus {
+  box-shadow: inset 0 0 0 2px rgba(162, 119, 255, 0.5) !important;
+}
+
+.calendar .calendar-day.calendar-today:active {
+  background-color: #9166e0 !important;
+}
+
+/* ===== Panel ===== */
+#panel {
+  background-color: #0f0f0f;
+  color: #edecee;
+  border-bottom: 1px solid #29263c;
+}
+
+#panel .panel-button {
+  color: #edecee;
+}
+
+#panel .panel-button:hover {
+  color: #a277ff;
+  background-color: rgba(162, 119, 255, 0.15);
+}
+
+#panel .panel-button:active,
+#panel .panel-button:checked,
+#panel .panel-button:focus {
+  color: #a277ff;
+  background-color: rgba(162, 119, 255, 0.25);
+  box-shadow: inset 0 -2px 0 #a277ff !important;
+}
+
+/* ===== Quick Settings Panel Background ===== */
+.quick-settings {
+  background-color: #15141b;
+  border: 1px solid #3d375e;
+  border-radius: 16px;
+  padding: 18px;
+}
+
+/* Unchecked quick toggles */
+.quick-toggle,
+.quick-menu-toggle {
+  border: none;
+}
+
+.quick-toggle {
+  background-color: none;
+}
+
+/* Override the flat button states for unchecked toggles */
+.icon-button.flat,
+.button.flat {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.icon-button.flat:hover,
+.button.flat:hover {
+  background-color: rgba(162, 119, 255, 0.12) !important;
+}
+
+.icon-button.flat:focus,
+.button.flat:focus {
+  box-shadow: inset 0 0 0 2px rgba(162, 119, 255, 0.3) !important;
+  background-color: transparent !important;
+}
+
+.icon-button.flat:active,
+.icon-button.flat:selected,
+.button.flat:active,
+.button.flat:selected {
+  background-color: rgba(162, 119, 255, 0.2) !important;
+}
+
+.icon-button.flat:checked,
+.button.flat:checked {
+  background-color: rgba(162, 119, 255, 0.2) !important;
+  color: #a277ff !important;
+}
+
+.icon-button.flat:checked:hover,
+.button.flat:checked:hover {
+  background-color: rgba(162, 119, 255, 0.3) !important;
+}
+
+/* ===== Cards / Surfaces ===== */
+.calendar,
+.datemenu-today-button,
+.quick-toggle-menu,
+.message,
+.events-button,
+.world-clocks-button,
+.weather-button {
+  background-color: #1e1d27;
+  border: 1px solid transparent !important;
+}
+
+.lg-extension,
+.quick-toggle-menu,
+.message,
+.events-button,
+.world-clocks-button,
+.weather-button {
+  color: #edecee;
+  background-color: #1e1d27;
+}
+
+.lg-extension:hover,
+.quick-toggle-menu:hover,
+.message:hover,
+.events-button:hover,
+.world-clocks-button:hover,
+.weather-button:hover {
+  color: #edecee;
+  background-color: #29263c;
+}
+
+.lg-extension:active,
+.quick-toggle-menu:active,
+.message:active,
+.events-button:active,
+.world-clocks-button:active,
+.weather-button:active {
+  color: #edecee;
+  background-color: #332f4a;
+}
+
+.lg-extension:insensitive,
+.quick-toggle-menu:insensitive,
+.message:insensitive,
+.events-button:insensitive,
+.world-clocks-button:insensitive,
+.weather-button:insensitive {
+  color: rgba(237, 236, 238, 0.5);
+  background-color: #1a1922;
+}
+
+/* ===== Quick toggle menu header ===== */
+.quick-toggle-menu .header .title {
+  color: #edecee;
+}
+
+.quick-toggle-menu .header .subtitle {
+  color: #6d6d6d;
+}
+
+/* ===== Quick toggle subtitle ===== */
+.quick-toggle StBoxLayout > .quick-toggle-subtitle {
+  color: #6d6d6d;
+}
+
+/* ===== Sliders (Volume / Brightness) ===== */
+.slider {
+  color: #a277ff;
+  -slider-height: 4px;
+  -slider-background-color: #29263c;
+  -slider-active-background-color: #a277ff;
+  -slider-handle-border-color: transparent;
+  -slider-handle-border-width: 0;
+}
+
+.quick-slider .slider {
+  color: #a277ff;
+  -slider-handle-border-color: transparent;
+  -barlevel-active-background-color: #a277ff;
+  -barlevel-background-color: #29263c;
+  -barlevel-overdrive-color: #ff6767;
+}
+
+/* ===== OSD (Volume/Brightness popup) ===== */
+.osd-window .level {
+  -barlevel-active-background-color: #a277ff;
+  -barlevel-background-color: #29263c;
+  -barlevel-overdrive-color: #ff6767;
+}
+
+/* ===== Popup Menus ===== */
+.popup-menu-content {
+  background-color: #1e1d27;
+  border: 1px solid #3d375e;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+.popup-menu-item {
+  color: #edecee;
+}
+
+.popup-menu-item:hover,
+.popup-menu-item:focus {
+  background-color: rgba(162, 119, 255, 0.15);
+  color: #a277ff;
+}
+
+.popup-menu-item:active {
+  background-color: rgba(162, 119, 255, 0.25);
+  color: #a277ff;
+}
+
+.popup-separator-menu-item .popup-separator-menu-item-separator {
+  background-color: #3d375e;
+}
+
+/* ===== Notifications ===== */
+.notification-banner {
+  background-color: #1e1d27;
+  border: 1px solid #3d375e;
+  border-radius: 12px;
+  color: #edecee;
+}
+
+.notification-banner .notification-button {
+  background-color: #29263c;
+  color: #edecee;
+  border: none;
+}
+
+.notification-banner .notification-button:hover {
+  background-color: rgba(162, 119, 255, 0.25);
+  color: #a277ff;
+}
+
+/* ===== Search ===== */
+#searchEntry {
+  background-color: #1e1d27;
+  color: #edecee;
+  border: 1px solid #3d375e;
+  caret-color: #a277ff;
+  selection-background-color: #3d375e;
+}
+
+#searchEntry:hover {
+  border-color: #a277ff;
+}
+
+#searchEntry:focus {
+  border-color: #a277ff;
+  box-shadow: 0 0 0 2px rgba(162, 119, 255, 0.3) !important;
+}
+
+/* ===== Overview / Dash ===== */
+.workspace-background {
+  background-color: #15141b;
+}
+
+#dash {
+  background-color: rgba(15, 15, 15, 0.85);
+  border: 1px solid rgba(162, 119, 255, 0.2);
+}
+
+.show-apps .overview-icon {
+  background-color: rgba(162, 119, 255, 0.1);
+  color: #a277ff;
+}
+
+.app-well-app-running-dot {
+  background-color: #a277ff;
+}
+
+/* ===== Workspace Switcher ===== */
+.workspace-thumbnail-indicator {
+  border: 2px solid #a277ff;
+}
+
+.ws-switcher-active-up,
+.ws-switcher-active-down {
+  background-color: #a277ff;
+}
+
+/* ===== Alt+Tab Switcher ===== */
+.switcher-list .item-box:outlined {
+  background-color: rgba(162, 119, 255, 0.2);
+  border: 2px solid #a277ff;
+}
+
+.switcher-list .item-box:selected {
+  background-color: rgba(162, 119, 255, 0.25);
+  border: 2px solid #a277ff;
+}
+
+/* ===== Dialogs ===== */
+.modal-dialog .button.default {
+  background-color: #a277ff !important;
+  color: #0f0f0f !important;
+}
+
+.modal-dialog .button.default:hover {
+  background-color: #b38fff !important;
+}
+
+/* ===== Toggle Switch ===== */
+.toggle-switch:checked {
+  background-color: #a277ff;
+}
+
+/* ===== Screen Shield ===== */
+.screen-shield-background {
+  background-color: #0f0f0f;
+}
+
+/* ===== Link color ===== */
+.url-highlighter {
+  link-color: #82e2ff;
+}
