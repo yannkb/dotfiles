@@ -316,6 +316,29 @@
   background-color: #1a1922;
 }
 
+/* ===== Quick toggle icon color when checked ===== */
+.quick-toggle:checked .quick-toggle-icon {
+  color: #0f0f0f !important;
+  icon-shadow: none !important;
+}
+
+.quick-toggle:checked .quick-toggle-title {
+  color: #0f0f0f !important;
+}
+
+.quick-toggle:checked .quick-toggle-subtitle {
+  color: rgba(15, 15, 15, 0.7) !important;
+}
+
+.quick-menu-toggle .quick-toggle-arrow:checked StIcon {
+  color: #0f0f0f !important;
+}
+
+/* ===== Quick toggle subtitle (unchecked) - more visible ===== */
+.quick-toggle StBoxLayout > .quick-toggle-subtitle {
+  color: #b0aeb3 !important;
+}
+
 /* ===== Quick toggle menu header ===== */
 .quick-toggle-menu .header .title {
   color: #edecee;
